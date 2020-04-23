@@ -11,11 +11,16 @@ class Test_Trans():
         self.driver = init_driver()
         self.trans_obj = Page(self.driver).get_trans()
 
+    @allure.step(title="这是登录测试")
     @pytest.mark.parametrize("dir",get_yml_with_filename_key("trans_data","TestData"))
     def test_001(self,dir):
+        allure.attach("输入姓名",dir["name"])
         self.trans_obj.input_name(dir["name"])
+
+        allure.attach("输入电话", dir["phone"])
         self.trans_obj.input_phone(dir["phone"])
 
+        allure.attach("提交")
         self.trans_obj.click_submit()
 
 
