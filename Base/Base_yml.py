@@ -1,4 +1,4 @@
-import yaml
+import yaml,rootpath,os
 
 
 # #只获取yml数据，但不作处理
@@ -9,7 +9,9 @@ import yaml
 
 # 获取一个列表类型的yml数据
 def get_yml_with_filename_key(filename, testname):
-    with open("../Data/"+filename+".yml", 'r') as f:
+    #windows路径比较特别，在Jenkins上 只需要 ./Data...  而pychram需要为 ../Data
+    filename= rootpath.path+os.sep+"Data"+os.sep+filename+".yml"
+    with open(filename, 'r') as f:
         # 将字典第一层即 TestData2数据抽出，此时为 ｛login_test1：｛name1:xxxx,password1:xxx｝，login_test2：｛name1:xxxx,password1:xxx｝｝
         data = yaml.load(f)[testname]
     case_list = []
