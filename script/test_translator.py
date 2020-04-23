@@ -25,7 +25,7 @@ class Test_Trans():
         self.trans_obj.input_phone(phone)
 
         allure.attach("提交")
-        self.trans_obj.click_submit().dssds
+        self.trans_obj.click_submit()
 
 
 
