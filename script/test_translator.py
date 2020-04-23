@@ -27,6 +27,9 @@ class Test_Trans():
         allure.attach("提交")
         self.trans_obj.click_submit()
 
+    def test_002(self):
+        assert False
+
     # def test_002(self):
     #     print(111)
     def teardown_class(self):
