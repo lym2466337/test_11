@@ -25,10 +25,9 @@ class Test_Trans():
         self.trans_obj.input_phone(phone)
 
         allure.attach("提交")
-        self.trans_obj.click_submit()
+        self.trans_obj.click_submit().dssds
 
-    def test_002(self):
-        assert False
+
 
     # def test_002(self):
     #     print(111)
