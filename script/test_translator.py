@@ -16,7 +16,7 @@ class Test_Trans():
     @pytest.mark.parametrize("dir", get_yml_with_filename_key("trans_data", "TestData"))
     def test_001(self, dir):
         name = dir["name"]
-        phone = dir["password"]
+        phone = dir["phone"]
 
         allure.attach("输入姓名", name)
         self.trans_obj.input_name(name)
