@@ -1,0 +1,12 @@
+TestData:
+  trans_test1:
+    name: "lisi"
+    phone: "180232444233"
+    toast: "我的"
+    screen: trans_test1
+
+  trans_test2:
+    name: "wangwu"
+    phone: "180232444244"
+    toast: "我的"
+    screen: trans_test1

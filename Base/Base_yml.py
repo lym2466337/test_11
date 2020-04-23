@@ -9,7 +9,7 @@ import yaml
 
 # 获取一个列表类型的yml数据
 def get_yml_with_filename_key(filename, testname):
-    with open("../Data/login_data.yml", 'r') as f:
+    with open("../Data/"+filename+".yml", 'r') as f:
         # 将字典第一层即 TestData2数据抽出，此时为 ｛login_test1：｛name1:xxxx,password1:xxx｝，login_test2：｛name1:xxxx,password1:xxx｝｝
         data = yaml.load(f)[testname]
     case_list = []
@@ -21,4 +21,4 @@ def get_yml_with_filename_key(filename, testname):
 
 
 if __name__ == '__main__':
-    print(get_yml_with_filename_key("login_data", "TestData2"))
+    print(get_yml_with_filename_key("trans_data", "TestData"))

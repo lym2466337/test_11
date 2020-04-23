@@ -9,19 +9,19 @@ TestData:
 #标准写法： 字典第1成-字典第2层-字典第3层， 这种方式在解析的时候需要将第2层的字典变成列表，装入第三层的字典数据
 TestData2:
   login_test1:
-    name: "xxx"
-    password: "yyyy"
+    name: "383811722@qq.com"
+    password: "tianyuanFB1991"
     toast: "我的"
     screen: login_test1
 
-  login_test2:
-    name: "xxx2"
-    password: "yyyy2"
-    toast: "成功"
-    screen: login_test2
-
-  login_test3:
-    name: "xxx3"
-    password: "yyyy3"
-    toast: "失败"
-    screen: login_test3
+#  login_test2:
+#    name: "xxx2"
+#    password: "yyyy2"
+#    toast: "成功"
+#    screen: login_test2
+#
+#  login_test3:
+#    name: "xxx3"
+#    password: "yyyy3"
+#    toast: "失败"
+#    screen: login_test3
